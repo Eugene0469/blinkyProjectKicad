@@ -102,10 +102,10 @@ F 3 "~" H 6300 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Regulator_Linear:LD1117S33TR_SOT223 U1
+L Regulator_Linear:LD1117S33TR_SOT223 U2
 U 1 1 60FDA95F
 P 6050 2250
-F 0 "U1" H 6050 2492 50  0000 C CNN
+F 0 "U2" H 6050 2492 50  0000 C CNN
 F 1 "LD1117S33TR_SOT223" H 6050 2401 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 6050 2450 50  0001 C CNN
 F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf" H 6150 2000 50  0001 C CNN
