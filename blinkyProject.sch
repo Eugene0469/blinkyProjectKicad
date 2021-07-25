@@ -126,12 +126,12 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_02x10_Odd_Even J2
 U 1 1 60FDDC5B
-P 8150 4050
-F 0 "J2" H 8200 4667 50  0000 C CNN
-F 1 "Conn_02x10_Odd_Even" H 8200 4576 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical" H 8150 4050 50  0001 C CNN
-F 3 "~" H 8150 4050 50  0001 C CNN
-	1    8150 4050
+P 8350 4050
+F 0 "J2" H 8400 4667 50  0000 C CNN
+F 1 "Conn_02x10_Odd_Even" H 8400 4576 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical" H 8350 4050 50  0001 C CNN
+F 3 "~" H 8350 4050 50  0001 C CNN
+	1    8350 4050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -408,85 +408,55 @@ Connection ~ 7100 2850
 $Comp
 L power:+3.3V #PWR015
 U 1 1 6100B191
-P 7450 3600
-F 0 "#PWR015" H 7450 3450 50  0001 C CNN
-F 1 "+3.3V" H 7465 3773 50  0000 C CNN
-F 2 "" H 7450 3600 50  0001 C CNN
-F 3 "" H 7450 3600 50  0001 C CNN
-	1    7450 3600
+P 7650 3600
+F 0 "#PWR015" H 7650 3450 50  0001 C CNN
+F 1 "+3.3V" H 7665 3773 50  0000 C CNN
+F 2 "" H 7650 3600 50  0001 C CNN
+F 3 "" H 7650 3600 50  0001 C CNN
+	1    7650 3600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7450 3650 7450 3600
+	7650 3650 7650 3600
 Wire Wire Line
-	7450 4050 7450 3650
-Connection ~ 7450 3650
-Wire Wire Line
-	7950 4150 7950 4050
-$Comp
-L power:GND #PWR016
-U 1 1 6100D74A
-P 7800 3750
-F 0 "#PWR016" H 7800 3500 50  0001 C CNN
-F 1 "GND" V 7805 3622 50  0000 R CNN
-F 2 "" H 7800 3750 50  0001 C CNN
-F 3 "" H 7800 3750 50  0001 C CNN
-	1    7800 3750
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7450 4050 7950 4050
-Connection ~ 7950 4050
-Wire Wire Line
-	7450 3650 7950 3650
-Wire Wire Line
-	7800 3750 7950 3750
-Wire Wire Line
-	7950 3850 7950 3750
-Connection ~ 7950 3750
-Text GLabel 7950 4250 0    50   Input ~ 0
+	7650 3650 8150 3650
+Text GLabel 8150 4550 0    50   Input ~ 0
 ADC_IN0
-Text GLabel 7950 4350 0    50   Input ~ 0
+Text GLabel 8650 4550 2    50   Input ~ 0
 ADC_IN1
 $Comp
 L power:GND #PWR017
 U 1 1 61012528
-P 7800 4550
-F 0 "#PWR017" H 7800 4300 50  0001 C CNN
-F 1 "GND" V 7805 4422 50  0000 R CNN
-F 2 "" H 7800 4550 50  0001 C CNN
-F 3 "" H 7800 4550 50  0001 C CNN
-	1    7800 4550
-	0    1    1    0   
+P 8900 3650
+F 0 "#PWR017" H 8900 3400 50  0001 C CNN
+F 1 "GND" V 8905 3522 50  0000 R CNN
+F 2 "" H 8900 3650 50  0001 C CNN
+F 3 "" H 8900 3650 50  0001 C CNN
+	1    8900 3650
+	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	7800 4550 7950 4550
-Wire Wire Line
-	7950 4450 7950 4550
-Connection ~ 7950 4550
-Text GLabel 8450 3750 2    50   Input ~ 0
+Text GLabel 8650 4250 2    50   Input ~ 0
 SWCLK
-Text GLabel 8450 3650 2    50   Input ~ 0
+Text GLabel 8150 4250 0    50   Input ~ 0
 SWDIO
-Text GLabel 8450 3950 2    50   Input ~ 0
+Text GLabel 8650 4150 2    50   Input ~ 0
 I2C1_SDA
-Text GLabel 8450 3850 2    50   Input ~ 0
+Text GLabel 8150 4150 0    50   Input ~ 0
 I2C1_SCL
-Text GLabel 8450 4050 2    50   Input ~ 0
+Text GLabel 8150 3850 0    50   Input ~ 0
 SPI1_NSS
-Text GLabel 8450 4150 2    50   Input ~ 0
+Text GLabel 8650 3850 2    50   Input ~ 0
 SPI1_SCK
-Text GLabel 8450 4250 2    50   Input ~ 0
+Text GLabel 8150 3950 0    50   Input ~ 0
 SPI1_MISO
-Text GLabel 8450 4350 2    50   Input ~ 0
+Text GLabel 8650 3950 2    50   Input ~ 0
 SPI1_MOSI
-Text GLabel 8450 4450 2    50   Input ~ 0
+Text GLabel 8650 4450 2    50   Input ~ 0
 USART1_TX
-Text GLabel 8450 4550 2    50   Input ~ 0
+Text GLabel 8150 4450 0    50   Input ~ 0
 USART1_RX
 NoConn ~ 4550 3750
 NoConn ~ 4550 3850
-NoConn ~ 7950 3950
 NoConn ~ 6300 3800
 NoConn ~ 6400 3800
 NoConn ~ 6300 3400
@@ -579,4 +549,64 @@ Wire Wire Line
 	5650 2700 5650 2600
 Wire Wire Line
 	6600 2250 6800 2250
+Wire Wire Line
+	8150 3750 8150 3650
+Connection ~ 8150 3650
+Wire Wire Line
+	8650 3650 8900 3650
+Wire Wire Line
+	8650 3750 8650 3650
+Connection ~ 8650 3650
+$Comp
+L power:GND #PWR?
+U 1 1 610634B2
+P 8900 4050
+F 0 "#PWR?" H 8900 3800 50  0001 C CNN
+F 1 "GND" V 8905 3922 50  0000 R CNN
+F 2 "" H 8900 4050 50  0001 C CNN
+F 3 "" H 8900 4050 50  0001 C CNN
+	1    8900 4050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6106372B
+P 7850 4050
+F 0 "#PWR?" H 7850 3800 50  0001 C CNN
+F 1 "GND" V 7855 3922 50  0000 R CNN
+F 2 "" H 7850 4050 50  0001 C CNN
+F 3 "" H 7850 4050 50  0001 C CNN
+	1    7850 4050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7850 4050 8150 4050
+Wire Wire Line
+	8650 4050 8900 4050
+$Comp
+L power:+3.3V #PWR?
+U 1 1 61065C5C
+P 7550 4350
+F 0 "#PWR?" H 7550 4200 50  0001 C CNN
+F 1 "+3.3V" H 7565 4523 50  0000 C CNN
+F 2 "" H 7550 4350 50  0001 C CNN
+F 3 "" H 7550 4350 50  0001 C CNN
+	1    7550 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 4350 8150 4350
+$Comp
+L power:GND #PWR?
+U 1 1 6106A77D
+P 8900 4350
+F 0 "#PWR?" H 8900 4100 50  0001 C CNN
+F 1 "GND" V 8905 4222 50  0000 R CNN
+F 2 "" H 8900 4350 50  0001 C CNN
+F 3 "" H 8900 4350 50  0001 C CNN
+	1    8900 4350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8650 4350 8900 4350
 $EndSCHEMATC
