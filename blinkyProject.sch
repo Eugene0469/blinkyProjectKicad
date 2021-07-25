@@ -329,20 +329,6 @@ F 3 "" H 7100 4400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7100 4400 7100 4300
-Wire Wire Line
-	5600 3850 6200 3850
-Wire Wire Line
-	5600 3950 6100 3950
-Wire Wire Line
-	6100 3800 6100 3950
-Connection ~ 6100 3950
-Wire Wire Line
-	6100 3950 6550 3950
-Wire Wire Line
-	6200 3800 6200 3850
-Connection ~ 6200 3850
-Wire Wire Line
-	6200 3850 6550 3850
 $Comp
 L power:+3.3V #PWR08
 U 1 1 60FFFA9C
@@ -435,25 +421,25 @@ F 3 "" H 8900 3650 50  0001 C CNN
 	1    8900 3650
 	0    -1   -1   0   
 $EndComp
-Text GLabel 8650 4250 2    50   Input ~ 0
-SWCLK
 Text GLabel 8150 4250 0    50   Input ~ 0
+SWCLK
+Text GLabel 8650 4250 2    50   Input ~ 0
 SWDIO
-Text GLabel 8650 4150 2    50   Input ~ 0
-I2C1_SDA
 Text GLabel 8150 4150 0    50   Input ~ 0
+I2C1_SDA
+Text GLabel 8650 4150 2    50   Input ~ 0
 I2C1_SCL
-Text GLabel 8150 3850 0    50   Input ~ 0
-SPI1_NSS
-Text GLabel 8650 3850 2    50   Input ~ 0
-SPI1_SCK
-Text GLabel 8150 3950 0    50   Input ~ 0
-SPI1_MISO
 Text GLabel 8650 3950 2    50   Input ~ 0
+SPI1_NSS
+Text GLabel 8150 3950 0    50   Input ~ 0
+SPI1_SCK
+Text GLabel 8650 3850 2    50   Input ~ 0
+SPI1_MISO
+Text GLabel 8150 3850 0    50   Input ~ 0
 SPI1_MOSI
-Text GLabel 8650 4450 2    50   Input ~ 0
-USART1_TX
 Text GLabel 8150 4450 0    50   Input ~ 0
+USART1_TX
+Text GLabel 8650 4450 2    50   Input ~ 0
 USART1_RX
 NoConn ~ 4550 3750
 NoConn ~ 4550 3850
@@ -558,10 +544,10 @@ Wire Wire Line
 	8650 3750 8650 3650
 Connection ~ 8650 3650
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0101
 U 1 1 610634B2
 P 8900 4050
-F 0 "#PWR?" H 8900 3800 50  0001 C CNN
+F 0 "#PWR0101" H 8900 3800 50  0001 C CNN
 F 1 "GND" V 8905 3922 50  0000 R CNN
 F 2 "" H 8900 4050 50  0001 C CNN
 F 3 "" H 8900 4050 50  0001 C CNN
@@ -569,10 +555,10 @@ F 3 "" H 8900 4050 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0102
 U 1 1 6106372B
 P 7850 4050
-F 0 "#PWR?" H 7850 3800 50  0001 C CNN
+F 0 "#PWR0102" H 7850 3800 50  0001 C CNN
 F 1 "GND" V 7855 3922 50  0000 R CNN
 F 2 "" H 7850 4050 50  0001 C CNN
 F 3 "" H 7850 4050 50  0001 C CNN
@@ -584,10 +570,10 @@ Wire Wire Line
 Wire Wire Line
 	8650 4050 8900 4050
 $Comp
-L power:+3.3V #PWR?
+L power:+3.3V #PWR0103
 U 1 1 61065C5C
 P 7550 4350
-F 0 "#PWR?" H 7550 4200 50  0001 C CNN
+F 0 "#PWR0103" H 7550 4200 50  0001 C CNN
 F 1 "+3.3V" H 7565 4523 50  0000 C CNN
 F 2 "" H 7550 4350 50  0001 C CNN
 F 3 "" H 7550 4350 50  0001 C CNN
@@ -597,10 +583,10 @@ $EndComp
 Wire Wire Line
 	7550 4350 8150 4350
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0104
 U 1 1 6106A77D
 P 8900 4350
-F 0 "#PWR?" H 8900 4100 50  0001 C CNN
+F 0 "#PWR0104" H 8900 4100 50  0001 C CNN
 F 1 "GND" V 8905 4222 50  0000 R CNN
 F 2 "" H 8900 4350 50  0001 C CNN
 F 3 "" H 8900 4350 50  0001 C CNN
@@ -609,4 +595,18 @@ F 3 "" H 8900 4350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8650 4350 8900 4350
+Wire Wire Line
+	5600 3950 6200 3950
+Wire Wire Line
+	5600 3850 6100 3850
+Wire Wire Line
+	6100 3800 6100 3850
+Connection ~ 6100 3850
+Wire Wire Line
+	6100 3850 6550 3850
+Wire Wire Line
+	6200 3800 6200 3950
+Connection ~ 6200 3950
+Wire Wire Line
+	6200 3950 6550 3950
 $EndSCHEMATC
